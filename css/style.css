@@ -3,6 +3,12 @@ Colors used:
 Primary Colors (white): #FFFFFF; (blue): #46A3F6; (purple): #606CFF;
 Secondary Colors (black): #313639; (gray): #DDDDDD;
 */
+
+/* For width */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -39,6 +45,7 @@ img {
   width: 100%;
 }
 
+/*Buttons & links*/
 a {
   color: #606CFF;
   text-decoration: none;
@@ -98,4 +105,86 @@ a:focus {
 .button:active {
   background-color: #46A3F6;
   color: #FFFFFF;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+/* Layout styling */
+.container {
+  padding: 25px 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #DDDDDD; }
+
+.center {
+  text-align: center;
+}
+
+header {
+  position: relative;
+  background-color: #46A3F6;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 3px 10px 0px rgba(49, 50, 50, 0.35);
+}
+
+main {
+  padding-top: 30px;
+}
+
+#hero {
+  background-color: #FFFFFF;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Navigation */
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+nav > ul > li > a:visited {
+  opacity: none;
+  color: #606CFF;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  opacity: 0.4;
+  color: #46A3F6;
+  text-decoration: none;
+}
+
+nav > ul > li > a:active {
+  opacity: 0.4;
+  color: #46A3F6;
+  text-decoration: none;
 }
