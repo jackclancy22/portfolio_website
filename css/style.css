@@ -3,7 +3,6 @@ Colors used:
 Primary Colors (white): #FFFFFF; (blue): #46A3F6; (purple): #606CFF;
 Secondary Colors (black): #313639; (gray): #DDDDDD;
 */
-
 /* For width */
 * {
   box-sizing: border-box;
@@ -76,11 +75,12 @@ a:focus {
   display: inline-block;
   background-color: #46A3F6;
   color: #313639;
-  font-weight: 500;
+  font-weight: 300px;
   padding: 10px;
-  border-radius: 3px;
-  border: 3px solid #606CFF;
-  transition: 0.2s opacity;
+  border-radius: 25px;
+  border: none;
+  transition-duration: 0.7s;
+  transition-property: opacity;
 }
 
 .button:hover {
@@ -108,22 +108,36 @@ a:focus {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.social {
+  max-width: 50px;
 }
 
 /* Layout styling */
 .container {
-  padding: 25px 15px;
+  padding: 10px 15px;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #DDDDDD; }
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #DDDDDD;
+  padding-left: 35px;
+}
 
 .center {
   text-align: center;
+}
+
+.left {
+  text-align: left;
 }
 
 header {
@@ -135,7 +149,7 @@ header {
 }
 
 main {
-  padding-top: 30px;
+  padding-top: 0px;
 }
 
 #hero {
@@ -151,8 +165,7 @@ nav {
   width: 100%;
 }
 
-
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
@@ -161,30 +174,141 @@ ul {
   list-style-type: none;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   opacity: none;
   color: #606CFF;
   text-decoration: none;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   opacity: 0.4;
   color: #46A3F6;
   text-decoration: none;
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   opacity: 0.4;
   color: #46A3F6;
   text-decoration: none;
+}
+
+picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  body {
+    font-size: 22px;
+  }
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 10px;
+  }
+
+  main {
+    padding-top: px;
+  }
+
+  .col-md-6 { /* col = column, md = medium-sized, 6 = 6 column-grid */
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-7 {
+    width: 41.66%;
+  }
+
+  .row {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {}
+
+@media only screen and (min-width: 1920px) {}
+
+/* Animation */
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/*short way*/
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+  @keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px, 50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
 }
