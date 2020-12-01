@@ -9,35 +9,98 @@ Secondary Colors (black): #313639; (gray): #DDDDDD;
 }
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Avenir', sans-serif;
 }
 
-<link rel="preconnect"href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap"rel="stylesheet">body {
-  background-color: #FFFFFF;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 44px;
-  color: #313639;
+@font-face {
+    font-family: 'Avenir';
+    src: url('Avenir-Light.eot');
+    src: local('Avenir Light'), local('Avenir-Light'),
+        url('Avenir-Light.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Light.woff2') format('woff2'),
+        url('Avenir-Light.woff') format('woff'),
+        url('Avenir-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('Avenir-Heavy.eot');
+    src: local('Avenir Heavy'), local('Avenir-Heavy'),
+        url('Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Heavy.woff2') format('woff2'),
+        url('Avenir-Heavy.woff') format('woff'),
+        url('Avenir-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Book';
+    src: url('Avenir-Book.eot');
+    src: local('Avenir Book'), local('Avenir-Book'),
+        url('Avenir-Book.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Book.woff2') format('woff2'),
+        url('Avenir-Book.woff') format('woff'),
+        url('Avenir-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('Avenir-Black.eot');
+    src: local('Avenir Black'), local('Avenir-Black'),
+        url('Avenir-Black.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Black.woff2') format('woff2'),
+        url('Avenir-Black.woff') format('woff'),
+        url('Avenir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('Avenir-Medium.eot');
+    src: local('Avenir Medium'), local('Avenir-Medium'),
+        url('Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Medium.woff2') format('woff2'),
+        url('Avenir-Medium.woff') format('woff'),
+        url('Avenir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
 h1, h2, h3, h4 {
-  line-height: 44px;
+  line-height: 80px;
 }
 
 h1 {
-  font-size: 2.75em;
-  font-weight: 700;
+  font-size: 7.13em;
+  font-weight: 900;
+  line-height: 0px;
 }
 
 h2 {
+  font-size: 6.13em;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2.75em;
+  font-weight: 500;
+}
+
+h4 {
   font-size: 2.25em;
   font-weight: 500;
 }
 
-h3 {
-  font-size: 1.75em;
+h5 {
+  font-size: 2.75em;
   font-weight: 500;
+  color: #FFFFFF;
 }
 
 img {
@@ -52,7 +115,7 @@ a {
 }
 
 a:hover {
-  color: #46A3F6;
+  color: #ADAAAA;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
@@ -62,63 +125,66 @@ a:visited {
 }
 
 a:active {
-  color: #DDDDDD;
+  color: #606CFF;
 }
 
-a:hover,
+a:hover {
+  font-size: 1.04em;
+  transition-duration: 0.4s;
+  text-decoration: none;
+}
+
 a:focus {
-  color: #46A3F6;
-  text-decoration: underline;
+  color: #ADAAAA;
+  text-decoration: none;
 }
 
 .button {
   display: inline-block;
-  background-color: #46A3F6;
-  color: #313639;
-  font-weight: 300px;
-  padding: 10px;
-  border-radius: 25px;
   border: none;
-  transition-duration: 0.7s;
+  transition-duration: 0.3s;
   transition-property: opacity;
 }
 
 .button:hover {
-  opacity: 0.6;
+  opacity: 0.7;
   color: #FFFFFF;
   text-decoration: none;
 }
 
 .button.contact {
-  background-color: transparent;
-  color: #46A3F6;
-  border: 3px solid #606CFF;
+
 }
 
 .button.contact:hover {
-  opacity: none;
-  background-color: #46A3F6;
-  color: #FFFFFF;
-  border: 3px solid #606CFF;
+
 }
 
 .button:active {
-  background-color: #46A3F6;
+  background-color: transparent;
   color: #FFFFFF;
 }
 
 .logo {
   max-width: 150px;
   max-height: 150px;
-}
-
-.social {
-  max-width: 50px;
+  top: 23px;
+  left: 240px;
+  width: 68px;
+  height: 102px;
 }
 
 /* Layout styling */
 .container {
-  padding: 10px 15px;
+  padding: 10px 120px;
+}
+
+#hero .center {
+  padding: 100px 0px;
+}
+
+#work .container {
+  padding: 20px 0px;
 }
 
 .row {
@@ -126,10 +192,16 @@ a:focus {
   /* 25px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #work .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #DDDDDD;
-  padding-left: 35px;
+  padding-bottom: 35px;
+  border-bottom: none;
+  padding-left: 100px;
 }
 
 .center {
@@ -142,10 +214,9 @@ a:focus {
 
 header {
   position: relative;
-  background-color: #46A3F6;
+  background-color: #FFFFFF;
   text-align: center;
   padding: 10px 0;
-  box-shadow: 0px 3px 10px 0px rgba(49, 50, 50, 0.35);
 }
 
 main {
@@ -157,6 +228,19 @@ main {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
+#services .row {
+  padding: 100px 50px;
+}
+
+#about .row {
+  font-size: 5.25em;
+}
+
+p {
+ color: #95989A;
+ font-weight: 300;
 }
 
 /* Navigation */
@@ -179,26 +263,27 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 15px;
-  text-transform: uppercase;
+  padding: 0 66px;
   font-weight: 700;
+  font-size: 1.25em;
 }
 
 nav>ul>li>a:visited {
   opacity: none;
-  color: #606CFF;
+  color: #2B2B2B;
   text-decoration: none;
 }
 
 nav>ul>li>a:hover {
-  opacity: 0.4;
-  color: #46A3F6;
+  opacity: 0.1;
+  color: #2B2B2B;
   text-decoration: none;
+  font-size: 1.25em;
 }
 
 nav>ul>li>a:active {
-  opacity: 0.4;
-  color: #46A3F6;
+  opacity: none;
+  color: #ADAAAA;
   text-decoration: none;
 }
 
@@ -206,6 +291,10 @@ picture {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+footer {
+background: radial-gradient(#46A3F6, #606CFF)
 }
 
 /* ==============================
@@ -222,7 +311,7 @@ Medium devices (640px and larger)
   }
 
   #hero span {
-    display: block;
+    display: inline-block;
   }
 
   nav {
@@ -235,7 +324,8 @@ Medium devices (640px and larger)
     padding-top: px;
   }
 
-  .col-md-6 { /* col = column, md = medium-sized, 6 = 6 column-grid */
+  .col-md-6 {
+    /* col = column, md = medium-sized, 6 = 6 column-grid */
     width: 50%;
   }
 
@@ -297,18 +387,36 @@ Medium devices (640px and larger)
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-  @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px, 50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
