@@ -147,10 +147,9 @@ a:focus {
 }
 
 .button {
-  display: inline-block;
-  border: none;
   transition-duration: 0.3s;
   transition-property: opacity;
+  display: inline;
 }
 
 .button:hover {
@@ -159,8 +158,10 @@ a:focus {
   text-decoration: none;
 }
 
-.button.contact {
-
+#contact .button {
+  opacity: 0.7;
+  color: #ADAAAA;
+  text-decoration: none;
 }
 
 .button.contact:hover {
@@ -243,11 +244,40 @@ main {
 
 #services .row {
   padding: 100px 50px;
+  margin-bottom: 0px;
+}
+
+div>ul {
+  display: inline-block;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+div>ul>li {
+  display: inline-block;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+#services ul {
+  margin-left: auto;
+  padding-top: 105px;
+  padding-bottom: 100px;
+}
+
+#services p {
+    color: #2B2B2B;
+}
+
+#services .container {
+  padding-bottom: 100px;
 }
 
 #services h3 {
   padding: 100px 45px 0px 45px;
   margin-bottom: 0px;
+  font-size: 2.25em;
 }
 
 p {
