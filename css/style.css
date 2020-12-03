@@ -101,7 +101,7 @@ h3 {
 
 h4 {
   font-size: 2.25em;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 h5 {
@@ -191,10 +191,6 @@ a:focus {
   padding: 100px 0px;
 }
 
-#work .container {
-  padding: 20px 0px;
-}
-
 .row {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
@@ -206,11 +202,37 @@ a:focus {
   display: table;
 }
 
+#work .container {
+  padding: 20px 0px;
+}
+
 #work .row {
   padding-bottom: 35px;
   border-bottom: none;
-  padding-left: 100px;
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
+
+#work h3 {
+  padding: 100px 45px 0px 45px;
+  margin-bottom: 0px;
+  font-size: 2.25em;
+}
+
+#work h4 {
+  margin-bottom: 0px;
+  font-size: 2.25em;
+}
+
+#work div>ul>li {
+  display: inline-block;
+  width: 133px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 
 .center {
   text-align: center;
@@ -283,6 +305,8 @@ div>ul>li {
 p {
  color: #95989A;
  font-weight: 300;
+ line-height: 32px;
+ font-size: 1.05em;
 }
 
 /* Navigation */
