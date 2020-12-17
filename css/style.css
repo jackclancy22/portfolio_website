@@ -78,7 +78,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 6.75em;
+  font-size: 3.75em;
   font-weight: 900;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -86,7 +86,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5.75em;
+  font-size: 2.75em;
   font-weight: 300;
   margin-top: auto;
   margin-bottom: auto;
@@ -94,18 +94,18 @@ h2 {
 }
 
 h3 {
-  font-size: 2.50em;
+  font-size: 1.50em;
   font-weight: 500;
   margin-top: auto;
 }
 
 h4 {
-  font-size: 2.25em;
+  font-size: 1.25em;
   font-weight: 300;
 }
 
 h5 {
-  font-size: 2.75em;
+  font-size: 1.75em;
   font-weight: 500;
   color: #FFFFFF;
 }
@@ -197,10 +197,8 @@ a:focus {
 .logo {
   max-width: 150px;
   max-height: 150px;
-  top: 23px;
-  left: 240px;
-  width: 68px;
-  height: 102px;
+  width: 90px;
+  height: 90px;
 }
 
 /* Layout styling */
@@ -286,7 +284,6 @@ a:focus {
 header {
   position: relative;
   background-color: #FFFFFF;
-  text-align: center;
   padding: 10px 0;
 }
 
@@ -375,23 +372,18 @@ p {
 }
 
 /* Navigation */
-nav {
-  display: inline-block;
-  width: 100%;
-}
 
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 ul {
   list-style-type: none;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
+
 
 nav>ul>li>a {
   padding: 0 53px;
@@ -419,6 +411,24 @@ nav>ul>li>a:active {
   text-decoration: none;
 }
 
+.navtoggle li:not(:last-child) {
+display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+} /* for setting up the positioning of the hamburger menu */
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  left: 250px;
+  top: 50px;
+  font-size: 20px;
+  padding-right: 0px;
+  transform: scaleY(2.2) scaleX(2.2);
+} /* for positioning the hamburger menu */
+
 picture {
   width: 100%;
   max-width: 100%;
@@ -432,14 +442,75 @@ footer {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
+
+  h1 {
+    font-size: 6.75em;
+    font-weight: 900;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #2B2B2B;
+  }
+
+  h2 {
+    font-size: 5.75em;
+    font-weight: 300;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #2B2B2B;
+  }
+
+  h3 {
+    font-size: 2.50em;
+    font-weight: 500;
+    margin-top: auto;
+  }
+
+  h4 {
+    font-size: 2.25em;
+    font-weight: 300;
+  }
+
+  h5 {
+    font-size: 2.75em;
+    font-weight: 500;
+    color: #FFFFFF;
+  }
+
+
   body {
     font-size: 18px;
   }
 
   header {
     text-align: unset;
+      width: 100%;
+      opacity: .95;
+      text-align: unset;
+      padding: 10px 0 4px;
+      position: fixed
   }
+
+  .logo {
+    max-width: 150px;
+    max-height: 150px;
+    top: 23px;
+    left: 240px;
+    width: 68px;
+    height: 102px;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+} /* cancels out base code for larger screens */
+
+.navtoggle li:last-child {
+  display: none;
+} /* hides hamburger menu from larger screens */
 
   #hero span {
     display: inline-block;
@@ -452,8 +523,8 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: px;
-  }
+  padding-top: 133px;
+}
 
   .col-md-6 {
     /* col = column, md = medium-sized, 6 = 6 column-grid */
@@ -531,6 +602,7 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -559,22 +631,23 @@ body {
 }
 
 header {
+  width: 100%;
+  opacity: .95;
   text-align: unset;
-  padding: 20px 0 13px;
+  padding: 10px 0 4px;
+  position: fixed
 }
 
 #hero span {
   display: inline-block;
 }
 
-nav {
-  width: auto;
-  float: right;
-  margin-top: 10px;
+nav > ul {
+  margin: 1em 0;
 }
 
 main {
-  padding-top: px;
+  padding-top: 133px;
 }
 
 .col-md-6 {
