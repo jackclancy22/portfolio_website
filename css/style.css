@@ -429,6 +429,24 @@ display: none;
   transform: scaleY(2.2) scaleX(2.2);
 } /* for positioning the hamburger menu */
 
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 100px 0px;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 100px 0px 10px;
+  border-bottom: 0.5px solid rgba(149, 152, 154, 1);
+  font-size: 1.5em;
+}
+
+.navtoggle.responsive li:last-child  {
+  border: none;
+}
+
 picture {
   width: 100%;
   max-width: 100%;
