@@ -607,6 +607,380 @@ Medium devices (640px and larger)
     margin-bottom: 56px;
   }
 
+  #vela .col-md-6 {
+    /* col = column, md = medium-sized, 6 = 6 column-grid */
+    width: 50%;
+    padding-top: 90px;
+    padding-left: 0px;
+    padding-right: 40px
+  }
+
+#vela .background {
+    position:absolute;
+    z-index:0;
+    margin-left: 0px;
+}
+
+.foreground {
+    position:absolute;
+    z-index: 1;
+}
+
+#vela h1 {
+  color: #fff;
+}
+
+/* design process circles*/
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  box-sizing: border-box;
+}
+.auto-flex {
+  align-items: flex-start;
+  background-color: transparent;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 35px;
+  justify-content: flex-start;
+  margin-top: 22px;
+  min-width: 48px;
+  width: auto;
+}
+.create {
+  background-color: transparent;
+  height: auto;
+  left: 683px;
+  letter-spacing: 0px;
+  line-height: 45px;
+  position: absolute;
+  text-align: left;
+  top: 251px;
+  white-space: nowrap;
+  width: auto;
+}
+.ellipse-1 {
+  background-color: transparent;
+  height: 381px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 381px;
+}
+.ellipse-2 {
+  background-color: transparent;
+  height: 381px;
+  left: 263px;
+  position: absolute;
+  top: 186px;
+  width: 381px;
+}
+.ellipse-4 {
+  background-color: transparent;
+  height: 381px;
+  left: 534px;
+  position: absolute;
+  top: 0px;
+  width: 381px;
+}
+.ellipse-5 {
+  background-color: transparent;
+  height: 381px;
+  left: 1067px;
+  position: absolute;
+  top: 0px;
+  width: 381px;
+}
+.ellipse-6 {
+  background-color: transparent;
+  height: 381px;
+  left: 796px;
+  position: absolute;
+  top: 187px;
+  width: 381px;
+}
+.ellipse-7 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 22px;
+  width: 22px;
+}
+.ellipse-8 {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 13px;
+  margin-left: 19.05px;
+  width: 13px;
+}
+.ellipse-9 {
+  align-self: flex-end;
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 13px;
+  margin-left: 13px;
+  width: 13px;
+}
+.empathise {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  letter-spacing: 0px;
+  line-height: 45px;
+  margin-bottom: -13px;
+  margin-left: 1px;
+  margin-top: 2px;
+  min-height: 32px;
+  min-width: 149px;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.group-15 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 152px;
+  position: relative;
+  width: 154px;
+}
+.group-18 {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  left: 377px;
+  min-height: 192px;
+  position: absolute;
+  top: 282px;
+  width: 154px;
+}
+.group-19 {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  left: 91px;
+  min-height: 168px;
+  padding: 0px 0;
+  position: absolute;
+  top: 108px;
+  width: 200px;
+}
+.group-20 {
+  align-items: flex-start;
+  background-color: transparent;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/5f6d010c0378f37219f6d161/releases/5fd6156659afa63130ed29e4/img/icon-metro-lab@1x.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  left: 924px;
+  min-height: 136px;
+  padding: 12.6px 30.9px;
+  position: absolute;
+  top: 287px;
+  width: 126px;
+}
+.group-21 {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  left: 644px;
+  min-height: 154px;
+  padding: 0px 0;
+  position: absolute;
+  top: 88px;
+  width: 160px;
+}
+.icon-aweso-ding-heart {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 53px;
+  margin-right: 0px;
+  margin-top: 5px;
+  width: 160px;
+}
+.icon-ionic-ios-leaf-9weIGq {
+  background-color: transparent;
+  height: 39px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 39px;
+}
+.icon-ionic-ios-leaf-rZZpqC {
+  background-color: transparent;
+  height: 48px;
+  left: 68px;
+  position: absolute;
+  top: 8px;
+  width: 47px;
+}
+.icon-mater-al-refresh {
+  background-color: transparent;
+  height: 138px;
+  left: 1189px;
+  position: absolute;
+  top: 99px;
+  width: 138px;
+}
+.icon-mater-lb-outline {
+  background-color: transparent;
+  height: 114px;
+  left: 27px;
+  position: absolute;
+  top: 19px;
+  width: 80px;
+}
+.icon-mater-le-outline {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 128px;
+  margin-left: 0px;
+  width: 200px;
+}
+.ideate {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  letter-spacing: 0px;
+  line-height: 45px;
+  margin-bottom: -13px;
+  margin-left: 2px;
+  margin-top: 2px;
+  min-height: 32px;
+  min-width: 92px;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.iterate {
+  background-color: transparent;
+  height: auto;
+  left: 1218px;
+  letter-spacing: 0px;
+  line-height: 45px;
+  position: absolute;
+  text-align: left;
+  top: 246px;
+  white-space: nowrap;
+  width: auto;
+}
+.line-4 {
+  background-color: transparent;
+  height: 8px;
+  left: -4px;
+  position: absolute;
+  top: 78px;
+  width: 31px;
+}
+.line-5 {
+  background-color: transparent;
+  height: 27px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 28px;
+}
+.line-6 {
+  background-color: transparent;
+  height: 31px;
+  left: 74px;
+  position: absolute;
+  top: -4px;
+  width: 8px;
+}
+.line-7 {
+  background-color: transparent;
+  height: 27px;
+  left: 101px;
+  position: absolute;
+  top: 0px;
+  width: 28px;
+}
+.line-9 {
+  background-color: transparent;
+  height: 8px;
+  left: 127px;
+  position: absolute;
+  top: 78px;
+  width: 31px;
+}
+.montserrat-medium-white-25px {
+  color: white;
+  font-family: "Montserrat-Medium", Helvetica, Arial, serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+}
+.overlap-group {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 568px;
+  position: relative;
+  width: 1448px;
+}
+.overlap-group1-eWo52r {
+  background-color: transparent;
+  height: 133px;
+  left: 10px;
+  position: absolute;
+  top: 19px;
+  width: 129px;
+}
+.overlap-group1-i98F4M {
+  background-color: transparent;
+  height: 568px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1448px;
+}
+.overlap-group2 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 95px;
+  margin-right: 5.23px;
+  position: relative;
+  width: 115px;
+}
+.path-11 {
+  background-color: transparent;
+  height: 78px;
+  left: 28px;
+  position: absolute;
+  top: 17px;
+  width: 38px;
+}
+.path-12 {
+  background-color: transparent;
+  height: 72px;
+  left: 61px;
+  position: absolute;
+  top: 23px;
+  width: 36px;
+}
+.test {
+  background-color: transparent;
+  height: auto;
+  left: 961px;
+  letter-spacing: 0px;
+  line-height: 45px;
+  position: absolute;
+  text-align: left;
+  top: 432px;
+  white-space: nowrap;
+  width: auto;
+}
+
   .a {
     padding-left: 10px;
   }
