@@ -607,6 +607,8 @@ Medium devices (640px and larger)
     margin-bottom: 56px;
   }
 
+  /* VELA page */
+
   #vela .col-md-6 {
     /* col = column, md = medium-sized, 6 = 6 column-grid */
     width: 50%;
@@ -620,14 +622,39 @@ Medium devices (640px and larger)
     z-index:0;
     margin-left: 0px;
 }
+#vela .background2 {
+    position:absolute;
+    z-index:0;
+    margin-left: -82px;
+}
 
-.foreground {
+#vela .foreground {
     position:absolute;
     z-index: 1;
 }
 
 #vela h1 {
   color: #fff;
+}
+
+#vela .card {
+transform: scaleY(.85) scaleX(.85);
+}
+
+/* size of timeline img */
+.col-md-2 img {
+  width: 20%;
+  transform: scaleY(1.65) scaleX(1.65);
+  padding-top: 11em;
+}
+
+.col-md-10 {
+  width: 90%;
+}
+
+.col-md-10 img {
+  width: 80%;
+  padding: 2em;
 }
 
 /* design process circles*/
