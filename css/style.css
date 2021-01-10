@@ -115,6 +115,14 @@ img {
   height: auto;
 }
 
+#home p {
+  color: #2B2B2B;
+}
+
+#about p {
+  color: #2B2B2B;
+}
+
 #about h1 {
   font-size: 3.60em;
   font-weight: 900;
@@ -134,6 +142,18 @@ img {
 
 #about div.center {
   padding-top: 0px;
+}
+
+#home nav {
+  z-index:100;
+}
+
+#about nav {
+  z-index:100;
+}
+
+#vela nav {
+  z-index:100;
 }
 
 /*Buttons & links*/
@@ -609,6 +629,34 @@ Medium devices (640px and larger)
 
   /* VELA page */
 
+  #vela .hero {
+    width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7em;
+    padding-bottom: 2em;
+    text-align: center;
+  }
+
+  #bullets {
+    transform: scaleY(0.8) scaleX(0.8);
+    padding-top: 2em;
+    text-align: center;
+  }
+
+  #summary p {
+    color: #2B2B2B;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+  #vela .overlap-group {
+    transform: scaleY(0.75) scaleX(0.75);
+    margin-bottom: 200px;
+  }
+
   #vela .col-md-6 {
     /* col = column, md = medium-sized, 6 = 6 column-grid */
     width: 50%;
@@ -617,28 +665,88 @@ Medium devices (640px and larger)
     padding-right: 40px
   }
 
+#vela .row {
+  max-width: 1600px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 200px;
+}
+
 #vela .background {
     position:absolute;
     z-index:0;
     margin-left: 0px;
 }
+
 #vela .background2 {
     position:absolute;
-    z-index:0;
+    z-index:-1;
     margin-left: -82px;
 }
 
 #vela .foreground {
     position:absolute;
-    z-index: 1;
+    z-index: 10;
 }
 
-#vela h1 {
+#empathise h1 {
   color: #fff;
+  padding: .5em;
+  font-size: 5em;
+}
+
+#empathise h2 {
+  color: #fff;
+  text-align: center;
+}
+
+#empathise h3 {
+  color: #fff;
+  text-align: center;
+}
+
+#empathise h4 {
+  color: #fff;
+  text-align: center;
+}
+
+#empathise p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
 
 #vela .card {
-transform: scaleY(.85) scaleX(.85);
+  width: 90%;
+  /* centre the element */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#vela .card1 {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#vela .windy {
+  width: 55%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#vela i {
+  color: #FFFFFF;
+  transform: scaleY(2.3) scaleX(2.3);
+  padding: 1.5em;
+}
+
+#vela footer {
+
 }
 
 /* size of timeline img */
