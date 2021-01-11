@@ -672,21 +672,8 @@ Medium devices (640px and larger)
   margin-bottom: 200px;
 }
 
-#vela .background {
-    position:absolute;
-    z-index:0;
-    margin-left: 0px;
-}
-
-#vela .background2 {
-    position:absolute;
-    z-index:-1;
-    margin-left: -82px;
-}
-
-#vela .foreground {
-    position:absolute;
-    z-index: 10;
+#vela .wave {
+  z-index: 1;
 }
 
 #empathise h1 {
@@ -717,6 +704,128 @@ Medium devices (640px and larger)
   line-height: 1.5em;
 }
 
+#empathise .wave-top {
+  position: relative;
+  top: -10px
+}
+
+#empathise .wave-bottom {
+  position: relative;
+  top: 10px
+}
+
+#ideate h1 {
+  color: #2B2B2B;
+  padding: .5em;
+  font-size: 5em;
+}
+
+#ideate h2 {
+  color: #2B2B2B;
+  text-align: center;
+}
+
+#ideate h3 {
+  color: #2B2B2B;
+  text-align: center;
+}
+
+#ideate h4 {
+  color: #2B2B2B;
+  text-align: center;
+}
+
+#ideate p {
+  color: #2B2B2B;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+#create h1 {
+  color: #2B2B2B;
+  padding: .5em;
+  font-size: 5em;
+}
+
+#create h2 {
+  color: #2B2B2B;
+  text-align: center;
+}
+
+#create h3 {
+  color: #2B2B2B;
+  text-align: center;
+}
+
+#create h4 {
+  color: #2B2B2B;
+  text-align: center;
+}
+
+#create p {
+  color: #2B2B2B;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+#test h1 {
+  color: #2B2B2B;
+  padding: .5em;
+  font-size: 5em;
+}
+
+#test h2 {
+  color: #2B2B2B;
+  text-align: center;
+}
+
+#test h3 {
+  color: #2B2B2B;
+  text-align: center;
+}
+
+#test h4 {
+  color: #2B2B2B;
+  text-align: center;
+}
+
+#test p {
+  color: #2B2B2B;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+#iterate h1 {
+  color: #2B2B2B;
+  padding: .5em;
+  font-size: 5em;
+}
+
+#iterate h2 {
+  color: #2B2B2B;
+  text-align: center;
+}
+
+#iterate h3 {
+  color: #2B2B2B;
+  text-align: center;
+}
+
+#iterate h4 {
+  color: #2B2B2B;
+  text-align: center;
+}
+
+#iterate p {
+  color: #2B2B2B;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
 #vela .card {
   width: 90%;
   /* centre the element */
@@ -739,30 +848,58 @@ Medium devices (640px and larger)
   margin-right: auto;
 }
 
-#vela i {
+#empathise i {
   color: #FFFFFF;
   transform: scaleY(2.3) scaleX(2.3);
   padding: 1.5em;
 }
 
-#vela footer {
+#empathise {
+  background-image: url('/Users/jackclancy/Documents/Front-End Dev/portfolio_website/img/VELA/img_purplebackground.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 0px, 50% 100%;
+  background-size: auto, auto;
+  background-repeat: repeat-y;
+  overflow: hidden;
+}
 
+#create {
+  background-image: url('/Users/jackclancy/Documents/Front-End Dev/portfolio_website/img/VELA/img_pinkbackground@2x.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 0px, 50% 100%;
+  background-size: auto, auto;
+  background-repeat: repeat-x, repeat-x;
+}
+
+#iterate {
+  background-image: url('/Users/jackclancy/Documents/Front-End Dev/portfolio_website/img/VELA/img_beigebackground@2x.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 0px, 50% 100%;
+  background-size: auto, auto;
+  background-repeat: repeat-x, repeat-x;
 }
 
 /* size of timeline img */
 .col-md-2 img {
-  width: 20%;
-  transform: scaleY(1.65) scaleX(1.65);
-  padding-top: 11em;
+  width: 9%;
+  transform: scaleY(1.25) scaleX(1.25);
+  padding-top: 8em;
+  margin-left: 5em;
 }
 
 .col-md-10 {
-  width: 90%;
+  width: 80%;
 }
 
 .col-md-10 img {
   width: 80%;
   padding: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* design process circles*/
