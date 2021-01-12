@@ -660,16 +660,17 @@ Medium devices (640px and larger)
   #vela .col-md-6 {
     /* col = column, md = medium-sized, 6 = 6 column-grid */
     width: 50%;
-    padding-top: 90px;
+    padding-bottom: 60px;
     padding-left: 0px;
-    padding-right: 40px
+    padding-right: 0px;
+    padding-top: 0px;
   }
 
 #vela .row {
   max-width: 1600px;
   margin-left: 25px;
   margin-right: 25px;
-  margin-bottom: 200px;
+  margin-bottom: 170px;
 }
 
 #vela .wave {
@@ -704,12 +705,12 @@ Medium devices (640px and larger)
   line-height: 1.5em;
 }
 
-#empathise .wave-top {
+#vela .wave-top {
   position: relative;
   top: -10px
 }
 
-#empathise .wave-bottom {
+#vela .wave-bottom {
   position: relative;
   top: 10px
 }
@@ -854,6 +855,16 @@ Medium devices (640px and larger)
   padding: 1.5em;
 }
 
+#test i {
+  color: #2b2b2b;
+  transform: scaleY(2.3) scaleX(2.3);
+  padding: 1.5em;
+}
+
+#test img {
+  padding: 2em;
+}
+
 #empathise {
   background-image: url('/Users/jackclancy/Documents/Front-End Dev/portfolio_website/img/VELA/img_purplebackground.png');
   background-repeat: no-repeat;
@@ -887,6 +898,13 @@ Medium devices (640px and larger)
   width: 9%;
   transform: scaleY(1.25) scaleX(1.25);
   padding-top: 8em;
+  margin-left: 5em;
+}
+
+#test .col-md-2 img {
+  width: 9%;
+  transform: scaleY(1.15) scaleX(1.15);
+  padding-top: 7em;
   margin-left: 5em;
 }
 
