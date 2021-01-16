@@ -916,7 +916,7 @@ footer {
 }
 
 #empathise {
-  background-image: url('../../img_purplebackground.png');
+  background-image: url('../img/img_purplebackground.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 0px, 50% 100%;
@@ -926,7 +926,7 @@ footer {
 }
 
 #create {
-  background-image: url('./img/VELA/img_pinkbackground@2x.png');
+  background-image: url('../img/img_pinkbackground@2x.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 0px, 50% 100%;
@@ -935,7 +935,7 @@ footer {
 }
 
 #iterate {
-  background-image: url('/Users/jackclancy/Documents/Front-End Dev/portfolio_website/img/VELA/img_beigebackground@2x.png');
+  background-image: url('../img/img_beigebackground@2x.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 0px, 50% 100%;
