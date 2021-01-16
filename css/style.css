@@ -482,7 +482,7 @@ picture {
 }
 
 footer {
-  background-image: url('resources/img/img_background-footer@2x.png');
+  background-image: url('img_background-footer@2x.png');
   background-repeat: no-repeat;
   background-position: 50% -100px, 50% 100%;
   background-size: auto, auto;
@@ -606,7 +606,7 @@ Medium devices (640px and larger)
  }
 
 footer {
-  background-image: url('./img/img_background-footer@2x.png');
+  background-image: url('img_background-footer@2x.png');
   background-repeat: no-repeat;
   background-position: 50% -100px, 50% 100%;
   background-size: auto, auto;
@@ -916,7 +916,7 @@ footer {
 }
 
 #empathise {
-  background-image: url('./img/VELA/img_purplebackground.png');
+  background-image: url('resources/img/img_purplebackground.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 0px, 50% 100%;
