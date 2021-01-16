@@ -226,6 +226,14 @@ a:focus {
   padding: 10px 80px;
 }
 
+footer .container {
+  padding: 10px 300px;
+}
+
+footer img  {
+  transform: scaleY(1.1) scaleX(1.1);
+}
+
 #hero .center {
   padding: 100px 0px;
 }
@@ -568,6 +576,34 @@ Medium devices (640px and larger)
   main {
   padding-top: 133px;
 }
+
+ /* bouncing scroll arrow */
+.stage {
+     display: flex;
+
+ }
+ .box {
+     align-self: flex-end;
+     animation-duration: 1.5s;
+     animation-iteration-count: infinite;
+     height: 40px;
+     margin: -30px auto 0 auto;
+     transform-origin: bottom;
+     width: 40px;
+ }
+ .bounce-6 {
+     animation-name: bounce-6;
+     animation-timing-function: ease;
+ }
+ @keyframes bounce-6 {
+     0%   { transform: scale(1,1)      translateY(0); }
+     10%  { transform: scale(1.1,.9)   translateY(0); }
+     30%  { transform: scale(.9,1.1)   translateY(-20px); }
+     50%  { transform: scale(1.05,.95) translateY(0); }
+     57%  { transform: scale(1,1)      translateY(-7px); }
+     64%  { transform: scale(1,1)      translateY(0); }
+     100% { transform: scale(1,1)      translateY(0); }
+ }
 
 footer {
   background-image: url('/Users/jackclancy/Documents/Front-End Dev/portfolio_website/img/img_background-footer@2x.png');
