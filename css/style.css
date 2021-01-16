@@ -935,7 +935,7 @@ footer {
 }
 
 #iterate {
-  background-image: url('./img/VELA/img_beigebackground@2x.png');
+  background-image: url('/Users/jackclancy/Documents/Front-End Dev/portfolio_website/img/VELA/img_beigebackground@2x.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 0px, 50% 100%;
